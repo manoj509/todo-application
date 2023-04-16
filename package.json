@@ -1,0 +1,14 @@
+{
+    "name": "mern-todo",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "backend": "cd backend && nodemon index.js",
+        "frontend": "cd frontend && yarn dev",
+        "dev": "concurrently \"yarn frontend \" \" yarn backend \""
+    },
+    "dependencies": {
+        "concurrently": "^8.0.1"
+    }
+}
